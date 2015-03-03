@@ -1,15 +1,15 @@
-gtk-color-scheme = "base_color:#2C2E2F\nbg_color:#383A3B"
-gtk-color-scheme = "text_color:#dcdcdc\nfg_color:#bdbdbd"
-gtk-color-scheme = "tooltip_bg_color:#161616\ntooltip_fg_color:#ffffff\nlink_color:#4a90f9"
+gtk-color-scheme = "base_color:#002b36\nbg_color:#073642"
+gtk-color-scheme = "text_color:#93a1a1\nfg_color:#839496"
+gtk-color-scheme = "tooltip_bg_color:#073642\ntooltip_fg_color:#93a1a1\nlink_color:#268bd2"
 
 ## Dark-Framed 
 #gtk-color-scheme = "theme_bg_dark_color:#575757\ntheme_fg_dark_color:#DCDCDC\ntheme_text_dark_color:#F5F5F5"
 
 ## Dark-Flat
-gtk-color-scheme = "theme_bg_dark_color:#383A3B\ntheme_fg_dark_color:#C0C0C0\ntheme_text_dark_color:#E0E0E0"
+gtk-color-scheme = "theme_bg_dark_color:#073642\ntheme_fg_dark_color:#93a1a1\ntheme_text_dark_color:#93a1a1"
 
 #  selection text color
-gtk-color-scheme = "selected_fg_color:#E9E9E9"
+gtk-color-scheme = "selected_fg_color:#268bd2"
 
 ## selection background color #####################################
 #  selection_wood		#7a6642;
@@ -23,7 +23,7 @@ gtk-color-scheme = "selected_fg_color:#E9E9E9"
 #  selection_mono		#646464;
 ###################################################################
 #  should be the same color that you have set in the file gtk.css #
-gtk-color-scheme = "selected_bg_color:#4d679a"
+gtk-color-scheme = "selected_bg_color:#073642"
 ###################################################################
 
 gtk-auto-mnemonics	= 1
@@ -385,8 +385,8 @@ style "progressbar" {
 	xthickness	= 0
 	ythickness	= 0
 
-	bg[SELECTED]		=  shade (1.00, @selected_bg_color)
-	fg[PRELIGHT]     	=  @selected_fg_color	#active text-color 
+	bg[SELECTED]		=  shade (1.00, @selected_fg_color)
+	fg[PRELIGHT]     	=  @selected_bg_color	#active text-color 
 
 	engine "murrine" {
 		gradient_shades		= {1.00, 1.00, 1.00, 1.00}
@@ -406,7 +406,7 @@ style "scale" { # slider
 	ythickness	= 2
 	bg[NORMAL]              = shade (0.99, @base_color)
 	bg[PRELIGHT]			= shade (1.00, @base_color)
-	bg[SELECTED]            = shade (1.00, @selected_bg_color)
+	bg[SELECTED]            = shade (1.00, @selected_fg_color)
 
 	engine "murrine" {
 		sliderstyle			= 0 						# forma del slider
