@@ -239,3 +239,5 @@
 @import url("gnome-applications-light.css");
 /* ---------------------------------------------------- */
 
+/* Transparency fix */
+@import url("transparencyfix.css");

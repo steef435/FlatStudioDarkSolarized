@@ -1,0 +1,2 @@
+/* Transparent background color fix by John Coppens (http://www.jcoppens.com/soft/howto/gtk/flatstudio.en.php) */
+GtkBox, GtkGrid { background-color: transparent; }
